@@ -1,0 +1,111 @@
+@layer normalize, skeleton, my-style;
+
+@import url("./normalize.css") layer(normalize);
+@import url("./skeleton.css") layer(skeleton);
+
+@layer my-style {
+
+body {
+    background: #518EFF;
+}
+header {
+    height: 52px;
+    background: #F5F5F5;
+    .headerContainer {
+        height: 100%;
+        .flexBox {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .bigBox {
+                width: 80%;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .smallBox {
+                .hamburger {
+                    margin-right: 20px;
+                }
+                display: flex;
+                justify-content: flex-end;
+                width: 20%;
+            }
+        }
+    }
+    .row .ten{
+        height: 52px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .row .two {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-right: 5px;
+    }
+    #monsterLogo {
+        padding-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 263px;
+    }
+    .hamburger {
+        display: inline-block;
+        cursor: pointer;
+        .bar1, .bar2, .bar3 {
+            width: 30px;
+            height: 3px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+          }
+          
+          .change .bar1 {
+            transform: translate(0, 11px) rotate(-45deg);
+          }
+          
+          .change .bar2 {opacity: 0;}
+          
+          .change .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+          }
+        }   
+}
+.section {
+    text-align: center;
+    padding: 10rem 0 7rem;
+}
+.main {
+    margin-top: 10rem;
+    background-image: url(/images/monsters-inc-1200-1200-675-675-crop-000000.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+main {
+    #MonsterPNG {
+        width: 157px;
+        border-radius: 10px;
+    }
+    div div div:nth-child(3) {
+        padding-top: 3rem;
+    }
+    div div div:nth-child(2) {
+        padding-top: 10rem;
+    }
+}
+.button-primary {
+    background-color: #F5F5F5;
+    color: #001A23;
+}
+
+
+@media (min-width:700px) {
+    header {
+        max-width:500px;
+    }
+}
+
+}
