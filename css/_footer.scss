@@ -1,0 +1,36 @@
+footer {
+  .footer {
+    height: 150px;
+    background: #ffffff;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+    //   margin: 0;
+  }
+  .row {
+    width: 100%;
+  }
+  .footerBox {
+    width: 100%;
+    @include flex($align: center, $justify: center);
+  }
+  .three {
+    @include flex($align: center, $justify: space-around);
+    height: 50px;
+    width: 105px;
+    margin: 5px 5px;
+    //   background: #d9d9d9;
+  }
+  .button {
+    width: fit-content;
+    margin-bottom: 0;
+    padding: 0 12px;
+  }
+  #copyright {
+    background: #ffffff;
+    span {
+      position: relative;
+    }
+  }
+}

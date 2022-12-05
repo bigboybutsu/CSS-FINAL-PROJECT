@@ -1,73 +1,125 @@
 @import url("./normalize.css") layer(normalize);
 @import url("./skeleton.css") layer(skeleton);
 @layer normalize, skeleton, my-style;
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  height: 52px;
+  background: #f5f5f5;
+}
+header .headerContainer {
+  height: 100%;
+}
+header .headerContainer .flexBox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .headerContainer .flexBox .monsterLogoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+header .headerContainer .flexBox .hamburgerContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+}
+header .headerContainer .flexBox .hamburgerContainer .hamburger {
+  margin-right: 20px;
+}
+header .row .ten {
+  height: 52px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .row .two {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 5px;
+}
+header #monsterLogo {
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+header .hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+header .hamburger .bar1,
+header .hamburger .bar2,
+header .hamburger .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+header .hamburger .change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+header .hamburger .change .bar2 {
+  opacity: 0;
+}
+header .hamburger .change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+footer .footer {
+  height: 150px;
+  background: #ffffff;
+}
+footer .container {
+  width: 100%;
+  padding: 0;
+}
+footer .row {
+  width: 100%;
+}
+footer .footerBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .three {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50px;
+  width: 105px;
+  margin: 5px 5px;
+}
+footer .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0;
+  padding: 0 12px;
+}
+footer #copyright {
+  background: #ffffff;
+}
+footer #copyright span {
+  position: relative;
+}
+
 @layer my-style {
   body {
-    background: #518EFF;
+    background: #518eff;
   }
-  header {
-    height: 52px;
-    background: #F5F5F5;
-  }
-  header .headerContainer {
-    height: 100%;
-  }
-  header .headerContainer .flexBox {
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  header .headerContainer .flexBox .bigBox {
-    width: 80%;
-    display: flex;
-    justify-content: flex-end;
-  }
-  header .headerContainer .flexBox .smallBox {
-    display: flex;
-    justify-content: flex-end;
-    width: 20%;
-  }
-  header .headerContainer .flexBox .smallBox .hamburger {
-    margin-right: 20px;
-  }
-  header .row .ten {
-    height: 52px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  header .row .two {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-right: 5px;
-  }
-  header #monsterLogo {
-    padding-left: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 263px;
-  }
-  header .hamburger {
-    display: inline-block;
-    cursor: pointer;
-  }
-  header .hamburger .bar1, header .hamburger .bar2, header .hamburger .bar3 {
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  header .hamburger .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  header .hamburger .change .bar2 {
-    opacity: 0;
-  }
-  header .hamburger .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
+  #slogan {
+    font-weight: 500;
+    color: black;
   }
   .section {
     text-align: center;
@@ -80,23 +132,115 @@
     background-size: cover;
     color: #fff;
   }
-  main #MonsterPNG {
+  .main #slogan {
+    font-size: 3rem;
+    padding-bottom: 4rem;
+    color: black;
+  }
+  .main #MonsterPNG {
     width: 157px;
     border-radius: 10px;
   }
-  main div div div:nth-child(3) {
-    padding-top: 3rem;
+  .main div div div:nth-child(3) {
+    padding-top: 1rem;
   }
-  main div div div:nth-child(2) {
+  .main #monsterLogoPNG {
     padding-top: 10rem;
   }
-  .button-primary {
-    background-color: #F5F5F5;
-    color: #001A23;
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
-  @media (min-width: 700px) {
-    header {
-      max-width: 500px;
-    }
+  .about .container {
+    margin: 0;
+    padding: 0;
+  }
+  .whyUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .whyUs .container {
+    margin: 0;
+    padding: 0;
+  }
+  .box {
+    background: #f5f5f5;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 25px;
+    margin: 2rem 0;
+  }
+  .box h4 {
+    padding-top: 2rem;
+    font-weight: 500;
+  }
+  .box p {
+    padding: 0 2rem;
+  }
+  .box .statContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+  }
+  .box .statContainer .statBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    height: 98px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+  }
+  .box .statContainer .statBox .smallText {
+    font-size: x-small;
+  }
+  .whyUs .box h4 {
+    margin-bottom: 0;
+  }
+  .revBox {
+    margin: 25px 10px;
+    background: #d9d9d9;
+    width: 315px;
+    height: 88px;
+    border-radius: 10px;
+  }
+  .revBox div {
+    position: relative;
+    left: 70px;
+    width: 70%;
+    text-align: start;
+  }
+  .revBox span {
+    display: block;
+    line-height: 1em;
+  }
+  .revBox .fa-star {
+    position: relative;
+    right: 115px;
+    color: #bb9f06;
+  }
+  .revBox .fa-circle-user {
+    position: relative;
+    right: 145px;
+    top: 35px;
+  }
+  .button-primary {
+    background-color: #f5f5f5;
+    color: #001a23;
   }
 }/*# sourceMappingURL=style.css.map */
