@@ -4,8 +4,10 @@
 header {
   position: -webkit-sticky;
   position: sticky;
-  height: 52px;
+  top: 0px;
+  height: 50px;
   background: #f5f5f5;
+  z-index: 2;
 }
 header .headerContainer {
   height: 100%;
@@ -16,17 +18,16 @@ header .headerContainer .flexBox {
   align-items: center;
 }
 header .headerContainer .flexBox .monsterLogoContainer {
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: flex-start;
 }
 header .headerContainer .flexBox .hamburgerContainer {
+  width: 50%;
+  height: 100%;
   display: flex;
   justify-content: flex-end;
-  width: 20%;
-}
-header .headerContainer .flexBox .hamburgerContainer .hamburger {
-  margin-right: 20px;
+  padding-right: 10px;
 }
 header .row .ten {
   height: 52px;
@@ -47,27 +48,121 @@ header #monsterLogo {
   align-items: center;
   width: 250px;
 }
-header .hamburger {
-  display: inline-block;
-  cursor: pointer;
+
+.hamburgerContainer {
+  margin-left: 10px;
 }
-header .hamburger .bar1,
-header .hamburger .bar2,
-header .hamburger .bar3 {
+.hamburgerContainer .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.hamburgerContainer .menu > li {
+  margin: 0 1rem;
+}
+.hamburgerContainer .menu-button-container {
+  display: none;
+  height: 100%;
   width: 30px;
-  height: 3px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-header .hamburger .change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
+.hamburgerContainer #menu-toggle {
+  display: none;
 }
-header .hamburger .change .bar2 {
-  opacity: 0;
+.hamburgerContainer .menu-button,
+.hamburgerContainer .menu-button::before,
+.hamburgerContainer .menu-button::after {
+  display: block;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
 }
-header .hamburger .change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
+.hamburgerContainer .menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+.hamburgerContainer .menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+.hamburgerContainer #menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+.hamburgerContainer #menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+.hamburgerContainer #menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+@media (max-width: 700px) {
+  .hamburgerContainer .menu > li {
+    overflow: hidden;
+  }
+  .hamburgerContainer .monsterLogoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .hamburgerContainer .hamburgerContainer {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  .hamburgerContainer .menu-button-container {
+    display: flex;
+  }
+  .hamburgerContainer .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .hamburgerContainer #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .hamburgerContainer #menu-toggle:checked ~ .menu li {
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .hamburgerContainer .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: black;
+    background-color: #f5f5f5;
+  }
+  .hamburgerContainer .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 footer .footer {
@@ -108,12 +203,58 @@ footer .button {
 }
 footer #copyright {
   background: #ffffff;
+  padding-bottom: 10px;
 }
 footer #copyright span {
   position: relative;
+  margin: 10px;
 }
 
+.contactBox {
+  background: #f5f5f5;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 25px;
+  margin: 2rem 0;
+  padding: 30px 0px 0px 0px;
+  margin: 100px 0px;
+  width: 60%;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 550px) {
+  .contactBox {
+    width: 100%;
+  }
+}
 @layer my-style {
+  html,
+body {
+    margin: 0;
+    height: 100%;
+  }
+  .wrapper {
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 150px; /* Height of footer */
+    min-height: 100%;
+  }
+  header {
+    background-color: #cff;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+  }
   body {
     background: #518eff;
   }
@@ -159,6 +300,8 @@ footer #copyright span {
     padding: 0;
   }
   .whyUs {
+    text-align: center;
+    padding-top: 7rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -183,6 +326,7 @@ footer #copyright span {
     font-weight: 500;
   }
   .box p {
+    text-align: start;
     padding: 0 2rem;
   }
   .box .statContainer {
@@ -205,6 +349,9 @@ footer #copyright span {
     border-radius: 10px;
     text-align: center;
     margin: 5px;
+  }
+  .box .statContainer .statBox .percent {
+    color: #006ed0;
   }
   .box .statContainer .statBox .smallText {
     font-size: x-small;
