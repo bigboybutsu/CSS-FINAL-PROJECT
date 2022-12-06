@@ -1,6 +1,6 @@
 footer {
   .footer {
-    height: 150px;
+    // height: 150px;
     background: #ffffff;
   }
   .container {
@@ -35,4 +35,17 @@ footer {
       margin: 10px;
     }
   }
+}
+
+.wrapper {
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 150px; /* Height of footer */
+  min-height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

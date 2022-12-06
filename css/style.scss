@@ -18,23 +18,6 @@
     height: 100%;
   }
 
-  .wrapper {
-    box-sizing: border-box;
-    position: relative;
-    padding-bottom: 150px; /* Height of footer */
-    min-height: 100%;
-  }
-
-  header {
-    background-color: #cff;
-  }
-
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #000;
-  }
   body {
     background: #518eff;
   }
@@ -51,15 +34,21 @@
     background-size: cover;
     color: #fff;
   }
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .slogan {
+    font-weight: 600;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 4rem;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
   .main {
-    #slogan {
-      font-weight: 600;
-      text-align: center;
-      font-size: 3rem;
-      padding-bottom: 4rem;
-      color: white;
-      text-shadow: 1px 1px 2px black;
-    }
     #MonsterPNG {
       width: 157px;
       border-radius: 10px;
@@ -93,13 +82,6 @@
     height: fit-content;
     border-radius: 25px;
     margin: 2rem 0;
-    // .boxEdit {
-    //   background: #f5f5f5;
-    //   width: 100%;
-    //   height: fit-content;
-    //   border-radius: 25px;
-    //   margin: 2rem 0;
-    // }
     h4 {
       padding-top: 2rem;
       font-weight: 500;
