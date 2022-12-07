@@ -344,6 +344,70 @@ h5 {
     width: 400px;
   }
 }
+.productBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  margin: 2rem 0;
+  padding: 30px 0px 0px 0px;
+}
+.productBox .container {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+.productxsBox {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.productTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.productPic {
+  width: 70%;
+  border-radius: 100px;
+  margin: 10px 0 5px 0;
+}
+
+@media (min-width: 550px) {
+  .productBox {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .edit {
+    width: 92%;
+  }
+}
+@media (min-width: 1024px) {
+  .six.columns {
+    width: 45%;
+  }
+}
 @layer my-style {
   html,
 body {
@@ -494,5 +558,33 @@ body {
     .column {
       margin-left: 0;
     }
+  }
+  .space {
+    margin: 2rem 0;
+  }
+  .center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .greenBtn {
+    display: inline-block;
+    height: 38px;
+    padding: 0 20px;
+    color: #555;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 38px;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #53cc5f;
+    border-radius: 5px;
+    border: 1px solid #53cc5f;
+    cursor: pointer;
+    box-sizing: border-box;
   }
 }/*# sourceMappingURL=style.css.map */
