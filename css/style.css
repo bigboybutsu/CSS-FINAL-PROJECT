@@ -388,14 +388,14 @@ h5 {
 }
 
 .productPic {
-  width: 70%;
+  width: 80%;
   border-radius: 100px;
   margin: 10px 0 5px 0;
 }
 
 @media (min-width: 550px) {
   .productBox {
-    width: 100%;
+    width: 70%;
   }
 }
 @media (min-width: 768px) {
