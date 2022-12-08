@@ -18,7 +18,10 @@
   width: 100%;
   margin: 2rem 0;
 }
-
+.pageBtn {
+  appearance: none;
+  @include btn();
+}
 .productTextBox {
   @include flex($justify: center, $direction: column, $wrap: nowrap);
   width: 100%;

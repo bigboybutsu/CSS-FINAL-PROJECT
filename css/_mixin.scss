@@ -10,3 +10,37 @@
   align-items: $align;
   flex-wrap: $wrap;
 }
+@mixin btn(
+  $textcolor:#191919,
+  $backgroundcolor: #53cc5f, 
+  $bordercolor: #53cc5f, 
+  $paddingsize: 0 20px,
+  $borderradius: 5px,
+  $hoverbackground: #53cc5f
+  ) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 38px;
+    padding: $paddingsize;
+    color: $textcolor;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 38px;
+    // letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: $backgroundcolor;
+    border-radius: $borderradius;
+    border: 1px solid $bordercolor;
+    cursor: pointer;
+    box-sizing: border-box;
+    &:checked {
+      background-color: $hoverbackground;
+      color:#ffffff;
+      font-size: 14px;
+    }
+}

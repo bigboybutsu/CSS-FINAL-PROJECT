@@ -42,7 +42,7 @@
       href="../images/png-transparent-blue-m-logo-illustration-mike-wazowski-monsters-inc-logo-pixar-monsters-inc-angle-text-sign.png"
     />
     <!-- <link rel="icon" type="image/png" href="images/favicon.png" /> -->
-    <script src="../index.js"></script>
+    <script src="../index.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -68,7 +68,7 @@
                   <a href="../pages/about us.html">About us</a>
                 </li>
                 <li>
-                  <a href="../pages/product.html">Product</a>
+                  <a href="../pages/product.html"><u>Product</u></a>
                 </li>
                 <li>
                   <a href="../pages/reviews.html">Reviews</a>
@@ -81,7 +81,144 @@
           </div>
         </div>
       </header>
-      <main></main>
+      <main>
+        <form>
+          <div class="mainContainer">
+            <div class="productBox2">
+              <div class="container">
+                <div class="row center">
+                  <div class="twelve columns center">
+                    <div class="productGetBox">
+                      <div class="numberBoxPos">
+                        <div class="numberBox">
+                          <span>1</span>
+                        </div>
+                      </div>
+                      <div class="bBox">
+                        <div class="normalText">
+                          <h5 class="normalText">
+                            Find out what offer will fit you best!
+                          </h5>
+                        </div>
+                        <div>
+                          <p>
+                            Please choose the option that fits you best. Do you
+                            want to sign a contract for your current address or
+                            a new one?
+                          </p>
+                        </div>
+                        <div class="buttonBox">
+                          <div class="container">
+                            <div class="row center">
+                              <div class="six columns">
+                                <div class="flexProduct">
+                                  <label>
+                                    <input
+                                      class="selectBtn oldAddress"
+                                      type="radio"
+                                      name="SelectAddress"
+                                    />
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="six columns">
+                                <div class="flexProduct">
+                                  <label>
+                                    <input
+                                      class="selectBtn newAddress"
+                                      type="radio"
+                                      name="SelectAddress"
+                                    />
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="twelve columns center">
+                    <div class="productGetBox">
+                      <div class="numberBoxPos">
+                        <div class="numberBox">
+                          <span>2</span>
+                        </div>
+                      </div>
+                      <div class="opacity">
+                        <div class="bBox">
+                          <div class="normalText">
+                            <h5 class="normalText">Your preferences</h5>
+                          </div>
+                          <div>
+                            <p>
+                              Please provide your zip code, your type of house
+                              and your average yearly energy usage.
+                            </p>
+                          </div>
+                          <label>
+                            <input
+                              class="u-full-width"
+                              id="zip"
+                              type="text"
+                              placeholder="Enter zip code here..."
+                              pattern="[0-9]*"
+                              disabled
+                            />
+                          </label>
+                          <div class="buttonBox">
+                            <div class="container">
+                              <div class="row center">
+                                <div class="six columns">
+                                  <div class="flexProduct">
+                                    <label>
+                                      <input
+                                        class="selectBtn apartment"
+                                        type="radio"
+                                        name="SelectHouse"
+                                        disabled
+                                      />
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="six columns">
+                                  <div class="flexProduct">
+                                    <label>
+                                      <input
+                                        class="selectBtn house"
+                                        type="radio"
+                                        name="SelectHouse"
+                                        disabled
+                                      />
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <label>
+                            <input
+                              class="u-full-width"
+                              id="zip"
+                              type="text"
+                              placeholder="Enter yearly energy consumption..."
+                              pattern="[0-9]*"
+                              disabled
+                            />
+                          </label>
+                          <button class="buyBtn" name="SelectBuy" disabled>
+                            Get Price
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
       <footer>
         <div class="footer">
           <div class="container">

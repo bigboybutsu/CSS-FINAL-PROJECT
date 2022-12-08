@@ -11,7 +11,14 @@
           "@layer"
         ]
       }
-    ]
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ],
+    "button-type": "off"
   },
   "browserslist": [
     "defaults",

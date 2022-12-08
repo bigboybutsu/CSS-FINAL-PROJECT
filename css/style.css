@@ -229,7 +229,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   background: #f5f5f5;
-  width: 100%;
+  max-width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -321,7 +321,6 @@ h5 {
   border-radius: 25px;
   margin: 2rem 0;
   padding: 30px 0px 0px 0px;
-  margin: 50px 0px;
 }
 
 .centerText {
@@ -368,6 +367,36 @@ h5 {
   margin: 2rem 0;
 }
 
+.pageBtn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+  padding: 0 20px;
+  color: #191919;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 38px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #53cc5f;
+  border-radius: 5px;
+  border: 1px solid #53cc5f;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.pageBtn:checked {
+  background-color: #53cc5f;
+  color: #ffffff;
+  font-size: 14px;
+}
+
 .productTextBox {
   display: flex;
   flex-direction: column;
@@ -401,6 +430,302 @@ h5 {
 @media (min-width: 768px) {
   .edit {
     width: 92%;
+  }
+}
+@media (min-width: 1024px) {
+  .six.columns {
+    width: 45%;
+  }
+}
+.productBox3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #f5f5f5;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  margin: 2rem 0;
+}
+
+.leaveReviewBtn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 38px;
+  padding: 0 20px;
+  color: #191919;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 38px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #CCBA53;
+  border-radius: 20px;
+  border: 1px solid #CCBA53;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.boxSize {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 550px) {
+  .aboutBox {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .edit {
+    width: 92%;
+  }
+}
+@media (min-width: 1024px) {
+  .six.columns {
+    width: 45%;
+  }
+}
+.productBox2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #f5f5f5;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  margin: 2rem 0;
+  padding: 30px;
+}
+.productBox2 .container {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+.numberBoxPos {
+  position: absolute;
+  display: inline-block;
+  left: calc(50% - 15px);
+  top: -15px;
+}
+.numberBoxPos .numberBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 30px;
+  height: 30px;
+  background-color: #003444;
+  color: white;
+  border-radius: 200px;
+}
+
+.buttonBox .container {
+  width: 100%;
+}
+
+.bBox {
+  padding: 10px;
+}
+
+.selectBtn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+  padding: 0 20px;
+  color: #191919;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 38px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #D9D9D9;
+  border-radius: 20px;
+  border: 1px solid #006ED0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.selectBtn:checked {
+  background-color: #006ED0;
+  color: #ffffff;
+  font-size: 14px;
+}
+.selectBtn.oldAddress::before {
+  content: "Old Address";
+}
+.selectBtn.newAddress::before {
+  content: "New Address";
+}
+.selectBtn.apartment::before {
+  content: "Apartment";
+}
+.selectBtn.house::before {
+  content: "House/Villa";
+}
+
+.buyBtn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+  padding: 0 20px;
+  color: #191919;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 38px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #CCBA53;
+  border-radius: 20px;
+  border: 1px solid #CCBA53;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.buyBtn:checked {
+  background-color: #ac9c3e;
+  color: #ffffff;
+  font-size: 14px;
+}
+.buyBtn.getPrice::before {
+  content: "Get price";
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.productGetBox {
+  background: #DFDFDF;
+  width: 100%;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.productTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.flexProduct {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.productPic {
+  width: 80%;
+  border-radius: 100px;
+  margin: 10px 0 5px 0;
+}
+
+@media (min-width: 550px) {
+  .productGetBox {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .edit {
+    width: 92%;
+  }
+}
+@media (min-width: 1024px) {
+  .six.columns {
+    width: 45%;
+  }
+}
+.productBox4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #f5f5f5;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  margin: 2rem 0;
+}
+
+.textFull {
+  width: 100%;
+  height: 100%;
+}
+
+.spaceEdit {
+  margin: 2rem 0 0 0;
+}
+
+.container .freeform {
+  height: 200px;
+}
+
+.submitBtn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 38px;
+  padding: 0 20px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 38px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #53CC5F;
+  border-radius: 20px;
+  border: 1px solid #53CC5F;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+@media (min-width: 550px) {
+  .productBox4 {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .edit2 {
+    width: 60%;
   }
 }
 @media (min-width: 1024px) {
@@ -493,15 +818,14 @@ body {
     text-align: start;
     padding: 0 2rem;
   }
-  .box .statContainer {
+  .statContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px 0 20px 0;
   }
-  .box .statContainer .statBox {
+  .statContainer .statBox {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -514,41 +838,83 @@ body {
     text-align: center;
     margin: 5px;
   }
-  .box .statContainer .statBox .percent {
+  .statContainer .statBox .percent {
     color: #006ed0;
   }
-  .box .statContainer .statBox .smallText {
+  .statContainer .statBox .smallText {
     font-size: x-small;
   }
   .whyUs .box h4 {
     margin-bottom: 0;
   }
   .revBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
     margin: 25px 10px;
     background: #d9d9d9;
     width: 315px;
-    height: 88px;
+    height: 200px;
     border-radius: 10px;
+    padding: 5px;
   }
-  .revBox div {
-    position: relative;
-    left: 70px;
-    width: 70%;
-    text-align: start;
+  .revBox .splitIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 18%;
+  }
+  .revBox .iconDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50%;
+  }
+  .revBox .iconDiv .fa-star {
+    padding-top: 7px;
+  }
+  .revBox .iconDiv div {
+    width: 50%;
+  }
+  .revBox .reviewText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 5px solid #d9d9d9;
+    border-radius: 10px;
+    max-width: 81%;
+    height: 94%;
+    text-overflow: ellipsis;
+    padding: 2px;
   }
   .revBox span {
-    display: block;
     line-height: 1em;
+    width: 100%;
+    height: 100%;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    display: -webkit-box !important;
+    overflow: hidden;
   }
   .revBox .fa-star {
-    position: relative;
-    right: 115px;
     color: #bb9f06;
   }
   .revBox .fa-circle-user {
-    position: relative;
-    right: 145px;
-    top: 35px;
+    width: 40px;
   }
   .button-primary {
     background-color: #f5f5f5;
@@ -569,22 +935,9 @@ body {
     align-items: center;
     flex-wrap: wrap;
   }
-  .greenBtn {
+  .normalText {
     display: inline-block;
-    height: 38px;
-    padding: 0 20px;
-    color: #555;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 900;
-    line-height: 38px;
-    text-transform: uppercase;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: #53cc5f;
-    border-radius: 5px;
-    border: 1px solid #53cc5f;
-    cursor: pointer;
-    box-sizing: border-box;
+    text-align: start !important;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -68,10 +68,10 @@
                   <a href="../pages/about us.html">About us</a>
                 </li>
                 <li>
-                  <a href="../pages/product.html"><u>Product</u></a>
+                  <a href="../pages/product.html">Product</a>
                 </li>
                 <li>
-                  <a href="../pages/reviews.html">Reviews</a>
+                  <a href="../pages/reviews.html"><u>Reviews</u></a>
                 </li>
                 <li>
                   <a href="../pages/contact.html">Contact</a>
@@ -83,66 +83,28 @@
       </header>
       <main>
         <div class="mainContainer">
-          <div class="productBox">
-            <div class="container">
-              <div class="row center">
-                <div class="six columns">
-                  <div class="productxsBox">
-                    <div class="flexColumn">
-                      <img
-                        class="productPic"
-                        src="../images/scarecanister.png"
-                        alt="Monsters, inc. Scream canister"
-                      />
-                    </div>
-                    <div class="productTextBox">
-                      <p class="employeeText">
-                        The Scream/Laugh Canister is what we use to collect
-                        energy straight from the screams of children. Its the
-                        Scarers job to make sure we get these screams collected.
-                        We then take the canisters to our energy room to convert
-                        these screams into energy for your home.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="six columns">
-                  <div class="productxsBox">
-                    <div class="flexColumn">
-                      <img
-                        class="productPic"
-                        src="../images/door.png"
-                        alt="Monsters, inc. Scream canister"
-                      />
-                    </div>
-                    <div class="productTextBox">
-                      <p class="employeeText">
-                        A door is a major way of going from room to room in the
-                        Monsters, Inc. factory from the 2001 Disney/Pixar
-                        animated film of the same name. Scarers use this
-                        technology to enter the Human World and scare children.
-                        The doors tend to match their target's design in terms
-                        of appearance.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="productBox">
+          <div class="productBox4 edit">
             <div class="container">
               <div class="row">
                 <div class="twelve columns">
-                  <div class="flexColumn">
-                    <div>
-                      <h5 class="space">Sign up today!</h5>
-                    </div>
-                    <div>
-                      <a class="pageBtn space" href="../pages/get_product.html"
-                        >Find out more</a
-                      >
-                    </div>
+                  <div class="spaceEdit">
+                    <label class="freeform" for="freeform">
+                      <textarea
+                        class="textFull"
+                        name="freeform"
+                        id="freeform"
+                        rows="10"
+                        cols="60"
+                        placeholder="Leave review here..."
+                        maxlength="500"
+                      ></textarea>
+                    </label>
+                  </div>
+                  <span>Max 500 words</span>
+                </div>
+                <div class="twelve columns">
+                  <div class="center">
+                    <button id="submitBtn" class="submitBtn">Submit</button>
                   </div>
                 </div>
               </div>
