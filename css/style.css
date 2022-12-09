@@ -170,10 +170,6 @@ footer .footer {
 }
 footer .container {
   width: 100%;
-  padding: 0;
-}
-footer .row {
-  width: 100%;
 }
 footer .footerBox {
   width: 100%;
@@ -222,6 +218,26 @@ footer {
   width: 100%;
 }
 
+@media (min-width: 379px) {
+  footer .container {
+    width: 72%;
+  }
+}
+@media (min-width: 470px) {
+  footer .container {
+    width: 60%;
+  }
+}
+@media (min-width: 575px) {
+  footer .container {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  footer .container {
+    width: 80%;
+  }
+}
 .aboutBox {
   display: flex;
   flex-direction: row;
@@ -302,14 +318,9 @@ h5 {
     width: 70%;
   }
 }
-@media (min-width: 768px) {
-  .edit {
-    width: 92%;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 550px) {
   .six.columns {
-    width: 45%;
+    width: 92%;
   }
 }
 .contactBox {
@@ -468,9 +479,9 @@ h5 {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #CCBA53;
+  background-color: #ccba53;
   border-radius: 20px;
-  border: 1px solid #CCBA53;
+  border: 1px solid #ccba53;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -744,14 +755,15 @@ body {
   }
   .section {
     text-align: center;
-    padding: 10rem 0 7rem;
+    padding: 5rem 0 0rem;
   }
   .main {
-    margin-top: 10rem;
+    margin-top: 0rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/monsters-inc-1200-1200-675-675-crop-000000.jpeg);
     background-position: center;
     background-size: cover;
     color: #fff;
+    height: 500px;
   }
   .mainContainer {
     display: flex;
@@ -810,7 +822,8 @@ body {
     border-radius: 25px;
     margin: 2rem 0;
   }
-  .box h4 {
+  .box h3 {
+    font-size: 2.4rem;
     padding-top: 2rem;
     font-weight: 500;
   }
