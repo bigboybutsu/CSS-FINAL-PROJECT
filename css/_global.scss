@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #518eff;
+}
+.button-primary {
+  background-color: #f5f5f5;
+  color: #001a23;
+}
+@media (min-width: 550px) {
+  .column {
+    margin-left: 0;
+  }
+  .noMargin {
+    margin-left: 0;
+  }
+}
+@media (min-width: 1024px) {
+.noMargin {
+  margin-left: 4%;
+}
+}
+//---Classes for spacing---
+.space {
+  margin: 2rem 0;
+}
+.flexRow {
+  @include flex($direction: row, $align: center, $justify: center);
+}
+.flexColumn {
+  @include flex($direction: column, $align: center, $justify: center);
+}
+
+//---Align---
+.normalText {
+  display: inline-block;
+  text-align: start !important;
+  width: 100%;
+}

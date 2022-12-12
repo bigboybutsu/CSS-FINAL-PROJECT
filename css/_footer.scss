@@ -1,15 +1,9 @@
 footer {
   .footer {
-    // height: 150px;
     background: #ffffff;
   }
   .container {
     width: 100%;
-    // padding: 0;
-    // //   margin: 0;
-  }
-  .row {
-    // width: 100%;
   }
   .footerBox {
     width: 100%;
@@ -20,7 +14,6 @@ footer {
     height: 50px;
     width: 105px;
     margin: 5px 5px;
-    //   background: #d9d9d9;
   }
   .button {
     width: fit-content;
@@ -40,7 +33,7 @@ footer {
 .wrapper {
   box-sizing: border-box;
   position: relative;
-  padding-bottom: 150px; /* Height of footer */
+  padding-bottom: 150px;
   min-height: 100%;
 }
 
@@ -49,17 +42,31 @@ footer {
   bottom: 0;
   width: 100%;
 }
-@media (min-width: 345px) {
+@media (min-width: 379px) {
   footer {
     .container {
-      width: 67%;
+      width: 72%;
     }
   }
 }
-@media (min-width: 510px) {
+@media (min-width: 470px) {
   footer {
     .container {
-      width: 100%;
+      width: 60%;
+    }
+  }
+}
+@media (min-width: 575px) {
+  footer {
+    .container {
+      width: 40%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    .container {
+      width: 80%;
     }
   }
 }

@@ -1,11 +1,7 @@
+
 .contactBox {
-  background: #f5f5f5;
+  @include containerBox;
   width: 100%;
-  height: fit-content;
-  border-radius: 25px;
-  margin: 2rem 0;
-  padding: 30px 0px 0px 0px;
-  // margin: 50px 0px;
 }
 .centerText {
   padding: 25px 0px;
@@ -21,6 +17,7 @@
     width: 60%;
   }
 }
+
 @media (min-width: 768px) {
   #MonstersIncCompanyPicture {
     width: 400px;

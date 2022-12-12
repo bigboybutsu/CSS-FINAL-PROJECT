@@ -16,12 +16,16 @@
   $bordercolor: #53cc5f, 
   $paddingsize: 0 20px,
   $borderradius: 5px,
-  $hoverbackground: #53cc5f
+  $hoverbackground: #53cc5f,
+  $width: 100%
   ) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: $width;
     height: 38px;
     padding: $paddingsize;
     color: $textcolor;
@@ -43,4 +47,19 @@
       color:#ffffff;
       font-size: 14px;
     }
+}
+@mixin containerBox(
+$backgroundcolor: #f5f5f5, 
+$height: fit-content, 
+$margin: 2rem 0, 
+$padding: 30px 0 0 0,
+)
+
+{
+  background: $backgroundcolor;
+  max-width: 100%;
+  height: $height;
+  border-radius: 25px;
+  margin: $margin;
+  padding: $padding;
 }

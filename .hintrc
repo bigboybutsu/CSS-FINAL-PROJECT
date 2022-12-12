@@ -8,7 +8,9 @@
       {
         "ignore": [
           "-ms-text-size-adjust",
-          "@layer"
+          "@layer",
+          "height: fit-content",
+          "width: fit-content"
         ]
       }
     ],
