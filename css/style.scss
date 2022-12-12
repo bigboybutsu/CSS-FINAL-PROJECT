@@ -25,10 +25,10 @@
   }
   .section {
     text-align: center;
-    padding: 10rem 0 7rem;
   }
   .main {
-    margin-top: 10rem;
+    margin-top: 2rem;
+    padding: 10rem 0 7rem;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(../images/monsters-inc-1200-1200-675-675-crop-000000.jpeg);
@@ -109,12 +109,13 @@
       flex-wrap: nowrap;
       justify-content: space-around;
       align-items: center;
-      width: 150px;
-      height: 98px;
+      min-width: 130px;
+      min-height: 98px;
       background-color: #d9d9d9;
       border-radius: 10px;
       text-align: center;
-      margin: 5px;
+      margin: 7px;
+      padding: 2px;
       .smallText {
         font-size: x-small;
       }

@@ -49,3 +49,17 @@ footer {
   bottom: 0;
   width: 100%;
 }
+@media (min-width: 345px) {
+  footer {
+    .container {
+      width: 67%;
+    }
+  }
+}
+@media (min-width: 510px) {
+  footer {
+    .container {
+      width: 100%;
+    }
+  }
+}
