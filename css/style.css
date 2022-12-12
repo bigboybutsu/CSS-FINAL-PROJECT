@@ -94,14 +94,20 @@ header #monsterLogo {
   content: "";
   margin-top: 8px;
 }
-.hamburgerContainer #menu-toggle:checked + .menu-button-container .menu-button::before {
+.hamburgerContainer
+  #menu-toggle:checked
+  + .menu-button-container
+  .menu-button::before {
   margin-top: 0px;
   transform: rotate(405deg);
 }
 .hamburgerContainer #menu-toggle:checked + .menu-button-container .menu-button {
   background: rgba(255, 255, 255, 0);
 }
-.hamburgerContainer #menu-toggle:checked + .menu-button-container .menu-button::after {
+.hamburgerContainer
+  #menu-toggle:checked
+  + .menu-button-container
+  .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
@@ -169,10 +175,6 @@ footer .footer {
   background: #ffffff;
 }
 footer .container {
-  width: 100%;
-  padding: 0;
-}
-footer .row {
   width: 100%;
 }
 footer .footerBox {
@@ -312,14 +314,9 @@ h5 {
     width: 70%;
   }
 }
-@media (min-width: 768px) {
-  .edit {
-    width: 92%;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 550px) {
   .six.columns {
-    width: 45%;
+    width: 92%;
   }
 }
 .contactBox {
@@ -379,8 +376,8 @@ h5 {
 
 .pageBtn {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -478,9 +475,9 @@ h5 {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #CCBA53;
+  background-color: #ccba53;
   border-radius: 20px;
-  border: 1px solid #CCBA53;
+  border: 1px solid #ccba53;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -553,8 +550,8 @@ h5 {
 
 .selectBtn {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -569,14 +566,14 @@ h5 {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   border-radius: 20px;
-  border: 1px solid #006ED0;
+  border: 1px solid #006ed0;
   cursor: pointer;
   box-sizing: border-box;
 }
 .selectBtn:checked {
-  background-color: #006ED0;
+  background-color: #006ed0;
   color: #ffffff;
   font-size: 14px;
 }
@@ -595,8 +592,8 @@ h5 {
 
 .buyBtn {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -611,9 +608,9 @@ h5 {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #CCBA53;
+  background-color: #ccba53;
   border-radius: 20px;
-  border: 1px solid #CCBA53;
+  border: 1px solid #ccba53;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -631,7 +628,7 @@ h5 {
 }
 
 .productGetBox {
-  background: #DFDFDF;
+  background: #dfdfdf;
   width: 100%;
   margin: 2rem 0;
   position: relative;
@@ -721,9 +718,9 @@ h5 {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #53CC5F;
+  background-color: #53cc5f;
   border-radius: 20px;
-  border: 1px solid #53CC5F;
+  border: 1px solid #53cc5f;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -745,7 +742,7 @@ h5 {
 }
 @layer my-style {
   html,
-body {
+  body {
     margin: 0;
     height: 100%;
   }
@@ -754,14 +751,16 @@ body {
   }
   .section {
     text-align: center;
+    padding: 10rem 0 7rem;
   }
   .main {
-    margin-top: 2rem;
-    padding: 10rem 0 7rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/monsters-inc-1200-1200-675-675-crop-000000.jpeg);
+    margin-top: 10rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/monsters-inc-1200-1200-675-675-crop-000000.jpeg);
     background-position: center;
     background-size: cover;
     color: #fff;
+    height: 500px;
   }
   .mainContainer {
     display: flex;
@@ -820,7 +819,8 @@ body {
     border-radius: 25px;
     margin: 2rem 0;
   }
-  .box h4 {
+  .box h3 {
+    font-size: 2.4rem;
     padding-top: 2rem;
     font-weight: 500;
   }
@@ -951,4 +951,4 @@ body {
     text-align: start !important;
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
