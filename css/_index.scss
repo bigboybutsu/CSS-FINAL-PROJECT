@@ -73,7 +73,7 @@
   @include flex($direction: row, $wrap: wrap, $justify: center, $align: center);
   .statBox {
     .percent {
-      color: #006ed0;
+      color: #00327D;
     }
     @include flex(
       $direction: column,
